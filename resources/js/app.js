@@ -5,11 +5,6 @@ import router from "./routes";
 
 window.Vue = require('vue');
 
-Vue.component(
-    "example-component",
-    require("./components/ExampleComponent.vue").default
-);
-
 Vue.component('example-component', require('./components/ExampleComponent.vue').default);
 
 Vue.use(VueRouter);
