@@ -1955,7 +1955,25 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony default export */ __webpack_exports__["default"] = ({
   components: {
     BookableListItem: _BookableListItem__WEBPACK_IMPORTED_MODULE_0__["default"]
-  }
+  },
+  // beforeCreate(){
+  //     console.log('before create');
+  // },
+  created: function created() {
+    console.log('created');
+  } // beforeMount() {
+  //     console.log('before mount');
+  // },
+  // mounted() {
+  //     console.log('mounted');
+  // },
+  // beforeDestroy() {
+  //     console.log('before destroy');
+  // },
+  // destroyed() {
+  //     console.log('destroyed');
+  // },
+
 });
 
 /***/ }),
