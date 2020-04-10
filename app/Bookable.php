@@ -6,5 +6,14 @@ use Illuminate\Database\Eloquent\Model;
 
 class Bookable extends Model
 {
-    //
+    public function bookings()
+    {
+        return $this->hasMany(Booking::class);
+    }
+
+    public function availableFor($from, $to): bool
+    {
+        // betweenDates -> local query scope scopeBetweenDates
+        return 0 === $this->bookings()->betweenDates($from, $to)->count();
+    }
 }
